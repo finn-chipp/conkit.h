@@ -112,7 +112,9 @@ struct ck_console_size ck_current_console_size(void) { // Get current terminal d
     return knownSize;
 }
 
-#elif defined(unix) || \ // Unix-like
+// Unix-like:
+
+#elif defined(unix) || \
       defined(__unix) || \
       defined(__unix__) || \
       defined(__APPLE__) || \
